@@ -1,0 +1,28 @@
+instalar git https://git-scm.com/download/win
+
+git config --global user.name "rikrdoceli"
+git config user.email "youremail"
+
+
+…or create a new repository on the command line
+
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rikrdoceli/1s-2024.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/rikrdoceli/1s-2024.git
+git branch -M main
+git push -u origin main
+
+
+
+error? ->
+git reset --mixed origin/main
+git add .
+git commit -m "This is a new commit for what I originally planned to be amended"
+git push origin main
